@@ -1,4 +1,4 @@
-# Repositorio y Base del Conocimiento para el Diplomado de Desarrollo de Aplicaciones Móviles Cross-Platform
+# Repositorio y Base del Conocimiento para el Diplomado de Desarrollo de Aplicaciones Móviles Cross-Platform AM-3
 
 Este es el repositorio oficial para compartir información, código, material externo, entre otros (...) que complementa los temas tratados en clase.
 

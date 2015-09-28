@@ -15,9 +15,9 @@ El espacio de comunicación y dudas esta abierto y sera como en consenso se deci
 
 ### Material Extra
 
-* [En la wiki del repositorio encuentran un este espacio donde se colocara información, artículos, cursos, e-books y material que pueda servir de apoyo.]()
-* [Cheat Sheets o Chuletas]()
-* [Depuración (Debugging) en Apache Cordova]()
+* [En la wiki del repositorio encuentran un este espacio donde se colocara información, artículos, cursos, e-books y material que pueda servir de apoyo.](http://git.io/vctjl)
+* [Cheat Sheets o Chuletas](http://git.io/vctjz)
+* [Depuración (Debugging) en Apache Cordova](http://git.io/vctjH)
 
 
 ### Colaboradores
@@ -31,7 +31,7 @@ Publicado bajo licencia MIT
 
 ¿Tiene alguna pregunta que no es una solicitud de función o informe de error? Por favor crear un incidente en los  `issues` de este repositorio.
 
-Ver el archivo [LICENSE](http://git.io/vfeRu) para más detalles.
+Ver el archivo [LICENSE](http://git.io/vctjj) para más detalles.
 
 ### Opciones de Licencia para Documentos Creados
 

@@ -29,7 +29,7 @@ Personas que han contribuido y colaborado con material, intervenciones y ayudas 
 
 Publicado bajo licencia MIT
 
-¿Tiene alguna pregunta que no es una solicitud de función o informe de error? Por favor crear un incidente en los  `issues` de este repositorio.
+¿Tiene alguna pregunta que no es una solicitud de función o informe de error? Por favor crear un incidente en los  [`issues`](https://github.com/alejo8591/unipiloto-am-3/issues) de este repositorio.
 
 Ver el archivo [LICENSE](http://git.io/vctjj) para más detalles.
 

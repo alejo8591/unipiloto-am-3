@@ -1,0 +1,22 @@
+{
+  "name": "lab9",
+  "description": "Lab9",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Alejandro Romero"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngCordova": "~0.1.23-alpha"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Accelerometer\"><param name=\"firefoxos-package\" value=\"Accelerometer\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.app.lab3"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.app.lab3"
+        }
+    },
+    "dependent_plugins": {}
+}

@@ -1,0 +1,29 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Compass\"><param name=\"firefoxos-package\" value=\"Compass\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.app.lab6"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.app.lab6"
+        }
+    },
+    "dependent_plugins": {}
+}

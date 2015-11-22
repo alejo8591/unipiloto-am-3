@@ -1,0 +1,18 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.app.lab37"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.app.lab37"
+        }
+    },
+    "dependent_plugins": {}
+}

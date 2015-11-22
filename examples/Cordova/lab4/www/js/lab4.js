@@ -1,4 +1,5 @@
-var data_node = document.getElementById('heading-info');
+var data_node;
+data_node = document.getElementById('heading-info');
 
 function getHeading(){
 	 console.log('getHeading OK');

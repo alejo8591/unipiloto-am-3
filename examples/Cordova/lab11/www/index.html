@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>Lab 11</title>
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons-1.4.5.min.css" />
+    </head>
+    <body>
+         <!-- home -->
+        <div data-role="page" data-theme="a" id="home">
+          <div data-role="panel" id="menu-home" data-position="right" data-theme="b">
+            <ul data-role="listview">
+              <li><a href="#audio" class="ui-btn ui-icon-audio ui-btn-icon-left">Captura de Audio</a></li>
+              <li><a href="#camera" class="ui-btn ui-icon-camera ui-btn-icon-left">Captura de Imagen</a></li>
+              <li><a href="#video" class="ui-btn ui-icon-video ui-btn-icon-left">Captura de Video</a></li>
+              <li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a></li>
+            </ul>
+          </div>
+            <div data-role="header">
+              <a href="#menu-home" class="ui-btn ui-icon-bullets ui-shadow ui-corner-all ui-btn-icon-notext"></a>
+                <h1>Lab11</h1>
+            </div>
+            <div data-role="content">
+              <h1>Bienvenido al API Media Capture</h1>
+            </div>
+            <div data-role="footer">
+                Footer
+            </div>
+        </div>
+
+        <!-- audio -->
+        <div data-role="page" data-theme="a" id="audio">
+          <div data-role="panel" id="menu-audio" data-position="right" data-theme="b">
+            <ul data-role="listview">
+              <li><a href="#audio" class="ui-btn ui-icon-audio ui-btn-icon-left">Captura de Audio</a></li>
+              <li><a href="#camera" class="ui-btn ui-icon-camera ui-btn-icon-left">Captura de Imagen</a></li>
+              <li><a href="#video" class="ui-btn ui-icon-video ui-btn-icon-left">Captura de Video</a></li>
+              <li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a></li>
+            </ul>
+          </div>
+          <div data-role="header">
+            <a href="#menu-audio" class="ui-btn ui-icon-bullets ui-shadow ui-corner-all ui-btn-icon-notext"></a>
+            <h1>Lab11</h1>
+          </div>
+          <div data-role="content">
+            <h3>Audio</h3>
+            <form>
+              <label for="num-items-audio">Número de Ítems</label>
+              <input type="range" name="num-items-audio" id="num-items-audio" value="1" min="1" max="5" />
+              <label for="duration-audio">Duración</label>
+              <input type="range" name="duration-audio" id="duration-audio" value="5" min="1" max="10" />
+              <a href="#" class="ui-btn ui-icon-audio ui-btn-icon-left" id="button-audio">Capturar Audio</a>
+            </form>
+            <div id="capture-audio-results"></div>
+          </div>
+          <div data-role="footer">
+            Footer
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div data-role="page" data-theme="a" id="camera">
+          <div data-role="panel" id="menu-camera" data-position="right" data-theme="b">
+            <ul data-role="listview">
+              <li><a href="#audio" class="ui-btn ui-icon-audio ui-btn-icon-left">Captura de Audio</a></li>
+              <li><a href="#camera" class="ui-btn ui-icon-camera ui-btn-icon-left">Captura de Imagen</a></li>
+              <li><a href="#video" class="ui-btn ui-icon-video ui-btn-icon-left">Captura de Video</a></li>
+              <li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a></li>
+            </ul>
+          </div>
+          <div data-role="header">
+            <a href="#menu-camera" class="ui-btn ui-icon-bullets ui-shadow ui-corner-all ui-btn-icon-notext"></a>
+            <h3>Lab11</h3>
+          </div>
+          <div data-role="content">
+            <h3>Capturar Imagen</h3>
+            <form>
+              <label for="num-items-camera">Número de Ítems</label>
+ 
+              <a href="#" class="ui-btn ui-icon-video ui-btn-icon-left" id="button-camera">Capturar Fotografía</a>
+            </form>
+            <div id="capture-camera-results"></div>
+          </div>
+          <div data-role="footer">
+            Footer
+          </div>
+        </div>
+
+        <!-- video -->
+        <div data-role="page" data-theme="a" id="video">
+          <div data-role="panel" id="menu-video" data-position="right" data-theme="b">
+            <ul data-role="listview">
+              <li><a href="#audio" class="ui-btn ui-icon-audio ui-btn-icon-left">Captura de Audio</a></li>
+              <li><a href="#camera" class="ui-btn ui-icon-camera ui-btn-icon-left">Captura de Imagen</a></li>
+              <li><a href="#video" class="ui-btn ui-icon-video ui-btn-icon-left">Captura de Video</a></li>
+              <li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a></li>
+            </ul>
+          </div>
+          <div data-role="header">
+            <a href="#menu-video" class="ui-btn ui-icon-bullets ui-shadow ui-corner-all ui-btn-icon-notext"></a>
+            <h1>Lab46</h1>
+          </div>
+          <div data-role="content">
+            <h3>Capturar Video</h3>
+            <form>
+              <label for="num-items-video">Número de Ítems</label>
+              <input type="range" name="num-items-video" id="num-items-video" value="1" min="1" max="5" />
+              <label for="duration-video">Duración</label>
+              <input type="range" name="duration-video" id="duration-video" value="5" min="1" max="10" />
+              <a href="#" class="ui-btn ui-icon-video ui-btn-icon-left" id="button-video">Capturar Video</a>
+            </form>
+            <div id="capture-video-results"></div>
+
+          </div>
+          <div data-role="footer">
+            Footer
+          </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/lab46.js"></script>
+    </body>
+</html>

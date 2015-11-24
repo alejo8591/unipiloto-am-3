@@ -1,0 +1,168 @@
+/* Global */
+
+/* http://www.w3schools.com/cssref/css3_browsersupport.asp */
+
+/* http://leaverou.github.io/prefixfree/ */
+* {
+	-webkit-box-sizing : border-box;
+	-moz-box-sizing : border-box;
+	box-sizing : border;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+/* Start: Header */
+.header{
+	background-color: #3A3F43;
+	border-bottom: 14px;
+	/* Utilizando  prefijo para "box-shadow" con una opacidad del 30% */
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+	padding: 22px 0;
+}
+
+
+.logo{
+	background-color: #515558;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;
+	margin: 0 auto;
+	padding: 5px 0;
+	text-align: center;
+	width: 250px;
+}
+
+.logo h1{
+	color: #FFF;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+/* End: Header */
+
+/* Start: Navigation */
+.nav-menu, .portfolio > figure.columns{
+	display: none;
+}
+
+label{
+	color: #3A3F43;
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px;
+}
+
+.nav-menu:checked + label{
+	background-color: #3A3F43;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: #FFF;
+
+}
+
+#all:checked ~ .portfolio .all,
+#develop:checked ~ .portfolio .develop,
+#languages:checked ~ .portfolio .langugages,
+#test:checked ~ .portfolio .skills,
+#skills:checked ~ .portfolio .all{
+	display: block;
+}
+
+/* END: Navigation */
+
+/* START: Portfolio */
+.portfolio{
+	margin-top: 20px;
+}
+
+.portfolio .four.columns{
+	margin-left: 0;
+	margin-right: 0;
+	width: 240px;
+}
+
+.portfolio > figure{
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio > figure img{
+	display: block;
+	max-width: 100%;
+}
+
+.portfolio figcaption{
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: rgba(58,63, 68, 0.8);
+	padding: 10%;
+
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+
+.portfolio figcaption h4{
+	color: #FFF;
+}
+
+.portfolio figcaption p{
+	color: #fff;
+	font-size: 0.9em;
+}
+
+.portfolio > figure:hover figcaption{
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);	
+}
+/* END: Potfolio */
+
+/* START: Footer */
+.footer{
+	border-top: 1px solid #CCC;
+	margin-top: 28px;
+	padding: 28px 0;
+}
+
+/* Tablet Portrait */
+@media only screen and (min-width: 768px) and (max-width: 959px){}
+
+/* Tablet Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	.portfolio .four.columns{
+		width: 50%;
+	}
+}
+
+/* Mobile Portrait Size */
+@media only screen and (max-width: 479px){
+	.container{
+		width: 100%;
+	}
+
+	.portfolio .four.columns{
+		width: 100%;
+	}
+
+	.footer{
+		text-align: center;
+	}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<title>{{title}}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/styles.min.css" />
+	</head>
+	<body>
+		<!-- Role predefinido -->
+		<!-- home -->
+		<div data-role="page" data-theme="b" id="home">
+			<div data-role="header">
+				<h1>{{title}}</h1>
+			</div>
+			<div data-role="content">
+				<a href="#list" class="ui-btn">Lista</a>
+				<a href="#contact-form" class="ui-btn">Contacto</a>
+			</div>
+			<div data-role="footer">
+				Footer
+			</div>
+		</div>
+		<!-- Login Form -->
+		<div data-role="page" id="login">
+			<div data-role="header">
+				<h1>Correcto</h1>
+			</div>
+			<div data-role="content">
+				<form id="login-form">
+					<label for="userid" class="ui-hidden-accessible">Email</label>
+					<input type="email" name="userid" id="userid" value="" placeholder="Email" />
+					<label for="password" class="ui-hidden-accessible">Contraseña</label>
+					<input type="password" name="password" id="password" value="" autocomplete="off" placeholder="password" />
+					<button class="ui-btn" id="login-user">Ingresar</button>
+				</form>
+				<a href="#register" class="ui-btn">¡Registrarme!</a>
+			</div>
+			<div data-role="footer">
+				Footer
+			</div>
+		</div>
+		<!-- Register Form -->
+		<div data-role="page" id="register">
+			<div data-role="header">
+				<h1>Correcto</h1>
+			</div>
+			<div data-role="content">
+				<form>
+					<label for="name" class="ui-hidden-accessible">Nombre:</label>
+					<input type="text" name="name" id="name" value="" placeholder="Nombre y Apellido" />
+					<label for="email" class="ui-hidden-accessible">Email</label>
+					<input type="email" name="email" id="email" value="" placeholder="Email" />
+					<label for="uid" class="ui-hidden-accessible">Documento de Identidad</label>
+					<input type="number" name="uid" id="uid" value="" placeholder="Documento de Identidad" />
+					<label for="register-password" class="ui-hidden-accessible">Contraseña</label>
+					<input type="password" name="register-password" id="register-password" value="" autocomplete="off" placeholder="password" />
+					<button class="ui-btn" id="register-button">Enviar</button>
+				</form>
+			</div>
+			<div data-role="footer">
+				Footer
+			</div>
+		</div>
+		<!-- orden de los scripts -->
+		<script src="js/lab5.js"></script>
+	</body>
+</html>

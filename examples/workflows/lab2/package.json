@@ -1,0 +1,14 @@
+{
+  "name": "lab2",
+  "version": "0.1.0",
+  "description": "lab2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Romero",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

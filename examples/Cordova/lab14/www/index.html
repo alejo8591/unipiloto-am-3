@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons-1.4.5.min.css" />
+        <title>Lab14</title>
+    </head>
+    <body>
+        <section id="main" data-role="page" >
+          <header data-role="header">
+            <h1>File API</h1>
+          </header>
+          <div data-role="content">
+            <p>
+              Seleccione el File System:
+              <input type="button" value="Temporary" onclick="processDir(LocalFileSystem.TEMPORARY);">
+              <input type="button" value="Persistent" onclick="processDir(LocalFileSystem.PERSISTENT);">
+            </p>
+          </div>
+        </section>
+
+        <section id="dirList" data-role="page" data-add-back-btn="true">
+          <header data-role="header">
+            <a href="#" class="ui-btn ui-icon-back" data-rel="back">Atras</a>
+            <h1>File API</h1>
+            <a onclick="writeFile();" data-icon="plus" class="ui-btn-right">Crear</a>
+          </header>
+          <div data-role="content">
+            <p>
+              Contenido del File System:
+            </p>
+            <div id="dirEntries"></div>
+            <hr />
+            <div id="writeInfo"></div>
+          </div>
+        </section>
+
+        <section id="fileDetails" data-role="page" data-add-back-btn="true">
+          <header data-role="header">
+            <a href="#" class="ui-btn ui-icon-back" data-rel="back">Atras</a>
+            <h1>File API</h1>
+          </header>
+          <div data-role="content">
+            <p>
+              <em>Información de Entrada en el Directorio</em>
+            </p>
+            <hr />
+            <div id="fileInfo"></div>
+            <hr />
+            <p>
+              <em>Metadata de Archivo:</em>
+            </p>
+            <div id="fileMetadata"></div>
+            <input type="button" value="Ver Archivo" onclick="viewFile();">
+            <input type="button" value="Eliminar Archivo" onclick="removeFile();">
+          </div>
+        </section>
+
+        <section id="viewFile" data-role="page" data-add-back-btn="true">
+          <header data-role="header">
+            <a href="#" class="ui-btn ui-icon-back" data-rel="back">Atras</a>
+            <h1>File API</h1>
+          </header>
+          <div data-role="content">
+            <div id="viewFileName"></div>
+            <div id="fileContents"></div>
+            <hr />
+            <div id="readInfo"></div>
+          </div>
+        </section>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/lab14.js"></script>
+    </body>
+</html>

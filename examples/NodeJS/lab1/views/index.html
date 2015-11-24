@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<link href="css/styles.css" rel="stylesheet">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/lab1.js"></script>
+<title>Chat Memes</title>
+</head>
+<body>
+<section id="signup">
+  <div id="set-username">
+    <form id="form-name">
+      <label for="name">Username</label>
+      <input type="text" name="name" id="name" placeholder="Ingresa tu nombre de usuario" maxlength="10" required />
+      <input type="submit" value="Entrar" id="set-nick" class="button">
+    </form>
+  </div>
+</section>
+<section id="wrapper">
+  <section id="chat">
+    <header>
+      <h1>#DiplomadoMóviles</h1>
+      <button id="logout" class="button">Salir</button>
+    </header>
+    <div id="contchat">
+      <div id="chatinsite">
+        <ul id="messages">
+        </ul>
+      </div>
+      <form id="form-message">
+        <input type="text" name="message" id="message" placeholder="Tu mensaje aquí" maxlength="140" required />
+        <input type="submit" value="Enviar" id="send-message" class="button">
+      </form>
+    </div>
+    <aside id="uscon">
+      <h3>En linea</h3>
+        <ul id="users">
+        </ul>
+    </aside>
+  </section>
+</section>
+</body>
+</html>

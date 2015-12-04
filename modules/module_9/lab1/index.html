@@ -1,0 +1,82 @@
+<!doctype html>
+<!-- touch index.html && mkdir js && cd js/ && touch app.js && touch controllers.js && touch services.js-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab1</title>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+</head>
+<body>
+<div ng-app="app">
+
+    <div ui-view></div>
+
+        <!-- CACHE FILE: list.html -->
+        <script type="text/ng-template" id="content.html">
+            <div>
+                <h3>Header App</h3>
+            </div>
+            <div>
+                <div>
+                    <ul>
+                        <li ng-repeat="page in content"> <a href="#" ng-click="setPage(page)">goto {{page}}</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div ui-view></div>
+                </div>
+            </div>
+        </script>
+
+         <!-- CACHE FILE: list.html -->
+    <script type="text/ng-template" id="content.page-one.html">
+        <div>
+            {{ detail.name }}
+            <ul>
+                <li>id: {{ detail.id }}</li>
+                <li>type: {{ detail.type }}</li>
+                <li>quantity: {{ detail.quantity }}</li>
+                <li>price: {{ detail.price | currency }}</li>
+            </ul>
+        </div>
+    </script>
+
+
+    <script type="text/ng-template" id="content.page-two.html">
+        <div>
+            {{ data.name }}
+            <ul>
+                <li>id: {{ data.id }}</li>
+                <li>type: {{ data.type }}</li>
+                <li>quantity: {{ data.quantity }}</li>
+                <li>price: {{ data.price | currency }}</li>
+            </ul>
+        </div>
+    </script>
+
+
+    <script type="text/ng-template" id="content.page-three.html">
+        <div>
+            <ul>
+                <li ng-repeat="product in list">
+                    {{ product.name }}:
+                    <ul>
+                        <li>id: {{ product.id }}</li>
+                        <li>type: {{ product.type }}</li>
+                        <li>quantity: {{ product.quantity }}</li>
+                        <li>price: {{ product.price | currency }}</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </script>
+
+
+    </div>
+    </body>
+    </html>

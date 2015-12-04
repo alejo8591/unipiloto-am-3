@@ -1,0 +1,25 @@
+{
+  "name": "lab1",
+  "homepage": "https://github.com/alejo8591/frontend-lab",
+  "authors": [
+    "Alejandro Romero <alejandro.romero@dmkcolomiba.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.8"
+  }
+}
